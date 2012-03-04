@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require joe0
+//= require joe1
+//= require smoothscroll
 //= require_tree .

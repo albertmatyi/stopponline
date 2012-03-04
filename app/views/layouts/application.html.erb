@@ -1,14 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Stopponline</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title><%= title %></title>
+<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+<%= render 'layouts/stylesheets' %>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-<%= yield %>
+</head>
+
+<body>
+<div id="page">
+  <%= render :partial => "layouts/flash", :locals => {:flash => flash} %>
+  <%= render 'shared/user_menu' %>
+  <%= render 'layouts/sidebar' %>
+  <div id="main-content">
+  	<section id="top"></section><!-- do not remove ;)-->
+
+    <%= yield %>
+
+  </div>
+</div>
+<% if Rails.env.development? 
+%>
+  <div id="debugdiv">
+    <%=debug(params)%>
+  </div>
+<%
+end %>
+
+<%= render 'layouts/scripts' %>
 
 </body>
 </html>
