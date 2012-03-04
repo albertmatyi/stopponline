@@ -1,0 +1,31 @@
+<%= form_for(@route) do |f| %>
+  <%#=render 'shared/error_messages', data: f.object %>
+
+  <div class="field">
+    <%= f.label :src_location_id %><br />
+    <%= f.text_field :src_location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dst_location_id %><br />
+    <%= f.text_field :dst_location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :departure_date %><br />
+    <%= f.datetime_select :departure_date %>
+  </div>
+  <div class="field">
+    <%= f.label :arrival_data %><br />
+    <%= f.datetime_select :arrival_data %>
+  </div>
+  <div class="field">
+    <%= f.label :places %><br />
+    <%= f.number_field :places %>
+  </div>
+  <div class="field">
+    <%= f.label :details %><br />
+    <%= f.text_field :details %>
+  </div>
+  <div class="actions">
+    <%= f.submit class: 'button' %>
+  </div>
+<% end %>

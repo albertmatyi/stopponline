@@ -15,3 +15,9 @@
  *= require_tree 
  *
 */
+
+#debugdiv{
+  position: fixed;
+  bottom: 0;
+  opacity: .5;
+}

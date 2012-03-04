@@ -5,13 +5,25 @@
         Takin yo&apos; ass wherever you wanna go
       </a>
       <ul>
-       	<li class="active" id="nav-1"><a href="#passengers">Passengers</a></li>
-        <li id="nav-2"><a href="#drivers">Drivers</a></li>
-        <li id="nav-3">
-          <!-- <a href="#signup">Sign up</a> -->
-          <%= link_to 'Sign up', new_user_registration_path %>
+       	<li class="<%=is_active?('routes/index') %>" id="nav-1"><a href="#passengers">Passengers</a></li>
+        <li class="<%=is_active?('routes/new') %>" id="nav-2">
+          <%=link_to 'Drivers', new_route_path %>
+        </li>
+        <li class="<%=is_active?('registrations/edit') || is_active?('registrations/new') %>" id="nav-3">
+          <% if user_signed_in? %>
+              <%=link_to 'Edit account', edit_user_registration_path %>
+          <%else%>
+              <%=link_to 'Sign up', new_user_registration_path%>
+          <%end%>
         </li>
         <li id="nav-4"><a href="#contact">Contact</a></li>
+        <li class="<%=is_active?('sessions/new')%>">
+          <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>        
+          <%else%>
+              <%= link_to('Login', new_user_session_path)  %>  
+          <%end%>
+        </li>
       </ul>
       <div class="bg_bottom"></div>
     </nav>

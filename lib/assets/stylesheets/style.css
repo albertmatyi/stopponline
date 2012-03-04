@@ -259,9 +259,9 @@ ul.ps_nav li.ps_preview span{
 
 /* ----sections---- */
 
-#home, #work, #about, #contact{
+#main-content > section {
 	position:relative;
-	margin-bottom:500px;
+/*	margin-bottom:500px; */
 	float:left;
 	width:100%;
 	padding-top:15px;
@@ -476,6 +476,8 @@ figure figcaption a:hover span{
 }
 /* ----social sites icons---- */
 .social_wrapper{
+  position: fixed;
+  bottom:0;
 	float:left;
 	width:100%;
 	padding:20px 0;

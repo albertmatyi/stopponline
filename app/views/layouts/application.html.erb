@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title><%= title %></title>
-<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= stylesheet_link_tag    "application", :media => "screen" %>
 <%= javascript_include_tag "application" %>
 <%= csrf_meta_tags %>
 <%= render 'layouts/stylesheets' %>
@@ -16,10 +16,8 @@
 <body>
 <div id="page">
   <%= render :partial => "layouts/flash", :locals => {:flash => flash} %>
-  <%= render 'shared/user_menu' %>
   <%= render 'layouts/sidebar' %>
   <div id="main-content">
-  	<section id="top"></section><!-- do not remove ;)-->
 
     <%= yield %>
 
@@ -34,6 +32,7 @@
 end %>
 
 <%= render 'layouts/scripts' %>
+<%#= render 'layouts/footer' %>
 
 </body>
 </html>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @route.user_id %>
+</p>
+
+<p>
+  <b>Src location:</b>
+  <%= @route.src_location_id %>
+</p>
+
+<p>
+  <b>Dst location:</b>
+  <%= @route.dst_location_id %>
+</p>
+
+<p>
+  <b>Departure date:</b>
+  <%= @route.departure_date %>
+</p>
+
+<p>
+  <b>Arrival data:</b>
+  <%= @route.arrival_data %>
+</p>
+
+<p>
+  <b>Places:</b>
+  <%= @route.places %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @route.details %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>

@@ -11,7 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120304173257) do
+ActiveRecord::Schema.define(:version => 20120304193107) do
+
+  create_table "locations", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "locations", ["name"], :name => "index_locations_on_name", :unique => true
+
+  create_table "routes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "src_location_id"
+    t.integer  "dst_location_id"
+    t.datetime "departure_date"
+    t.datetime "arrival_data"
+    t.integer  "places"
+    t.string   "details"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "routes", ["created_at"], :name => "index_routes_on_created_at"
+  add_index "routes", ["dst_location_id"], :name => "index_routes_on_dst_location_id"
+  add_index "routes", ["src_location_id"], :name => "index_routes_on_src_location_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -26,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20120304173257) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
