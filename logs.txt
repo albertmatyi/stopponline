@@ -1,12 +1,3 @@
-2012-03-04T23:46:01+00:00 heroku[api]: Add-on add logging:basic by albertmatyi@gmail.com
-2012-03-04T23:46:01+00:00 heroku[api]: Release v1 created by albertmatyi@gmail.com
-2012-03-04T23:46:03+00:00 heroku[api]: Add-on update shared-database
-2012-03-04T23:46:03+00:00 heroku[api]: Release v3 created by albertmatyi@gmail.com
-2012-03-04T15:50:32-08:00 heroku[slugc]: Slug compilation started
-2012-03-04T23:52:08+00:00 heroku[api]: Release v4 created by albertmatyi@gmail.com
-2012-03-04T23:52:08+00:00 heroku[api]: Deploy 7cbf404 by albertmatyi@gmail.com
-2012-03-04T23:52:08+00:00 heroku[web.1]: State changed from created to starting
-2012-03-04T15:52:09-08:00 heroku[slugc]: Slug compilation finished
 2012-03-04T23:52:13+00:00 heroku[web.1]: Starting process with command `thin -p 26457 -e production -R /home/heroku_rack/heroku.ru start`
 2012-03-04T23:52:14+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
 2012-03-04T23:52:14+00:00 app[web.1]: >> Listening on 0.0.0.0:26457, CTRL+C to stop
@@ -17,18 +8,17 @@
 2012-03-04T23:52:26+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
 2012-03-04T23:52:26+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
 2012-03-04T23:52:26+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
-2012-03-04T23:52:26+00:00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:52:26 +0000] "
-GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
+2012-03-04T23:52:26+00:00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:52:26 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
 2012-03-04T23:52:27+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
 2012-03-04T23:52:27+00:00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:52:27 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
 2012-03-04T23:52:27+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
 2012-03-04T23:52:27+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-04T23:52:27+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
+2012-03-04T23:
+52:27+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
 2012-03-04T23:52:27+00:00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:52:27 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
 2012-03-04T23:52:36+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
 2012-03-04T23:52:36+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-04T23:52:36+00:
-00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:52:36 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
+2012-03-04T23:52:36+00:00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:52:36 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
 2012-03-04T23:53:45+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
 2012-03-04T23:53:45+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
 2012-03-04T23:53:45+00:00 heroku[nginx]: 78.97.236.199 - - [04/Mar/2012:23:53:45 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
@@ -47,11 +37,11 @@ GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/201001
 2012-03-04T23:54:32+00:00 heroku[web.1]: State changed from starting to up
 2012-03-05T00:01:07+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
 2012-03-05T00:01:07+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-05T00:01:07+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: 
-http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-05T00:01:07+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
 2012-03-05T00:01:07+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
 2012-03-05T00:01:07+00:00 heroku[nginx]: 78.97.236.199 - - [05/Mar/2012:00:01:07 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" stopponline.heroku.com
-2012-03-05T00:01:07+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
+2012-03-05T00:01:07+00:00 heroku[router]: Error H13 (Conne
+ction closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
 2012-03-05T00:01:09+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
 2012-03-05T00:01:09+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
 2012-03-05T00:01:09+00:00 heroku[nginx]: 78.97.236.199 - - [05/Mar/2012:00:01:09 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0.2) Gecko/20100101 Firefox/10.0.2" stopponline.heroku.com
@@ -85,3 +75,28 @@ http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (cal
 2012-03-05T08:53:19+00:00 app[web.1]: >> Stopping ...
 2012-03-05T08:53:21+00:00 heroku[web.1]: Process exited with status 0
 2012-03-05T08:53:21+00:00 heroku[web.1]: State changed from up to down
+2012-03-06T09:57:52-08:00 heroku[slugc]: Slug compilation started
+2012-03-06T09:58:05-08:00 heroku[slugc]: Slug compilation failed: failed to install gems via Bundler
+2012-03-06T17:58:15+00:00 heroku[web.1]: Unidling
+2012-03-06T17:58:15+00:00 heroku[web.1]: State changed from down to created
+2012-03-06T17:58:15+00:00 heroku[web.1]: State changed from created to starting
+2012-03-06T17:58:22+00:00 heroku[web.1]: Starting process with command `thin -p 50991 -e production -R /home/heroku_rack/heroku.ru start`
+2012-03-06T17:58:23+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2012-03-06T17:58:23+00:00 app[web.1]: >> Maximum connections set to 1024
+2012-03-06T17:58:23+00:00 app[web.1]: >> Listening on 0.0.0.0:50991, CTRL+C to stop
+2012-03-06T17:58:25+00:00 heroku[web.1]: State changed from starting to up
+2012-03-06T17:58:30+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-06T17:58:30+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-06T17:58:30+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-06T17:58:30+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
+2012-03-06T17:58:30+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
+2012-03-06T17:58:30+00:00 heroku[nginx]: 78.97.236.199 - - [06/Mar/2012:17:58:30 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
+2012-03-06T17:58:31+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
+2012-03-06T17:58:31+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
+2012-03-06T17:58:31+00:00 heroku[nginx]: 78.97.236.199 - - [06/Mar/2012:17:58:31 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
+2012-03-06T17:58:32+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
+2012-03-06T17:58:32+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/favicon.ico dyno=web.1 queue= wait= service= status=503 bytes=
+2012-03-06T17:58:32+00:00 heroku[nginx]: 78.97.236.199 - - [06/Mar/2012:17:58:32 +0000] "GET /favicon.ico HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
+2012-03-06T17:58:35+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET stopponline.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
+2012-03-06T17:58:35+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
+2012-03-06T17:58:35+00:00 heroku[nginx]: 78.97.236.199 - - [06/Mar/2012:17:58:35 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0" stopponline.heroku.com
