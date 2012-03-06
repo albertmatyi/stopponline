@@ -1,0 +1,67 @@
+# install rvm (single-user mode) !!! NO SUDO !!!
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+
+#add the following to your .bashrc file
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+#reload bash
+
+#zlib might be missing
+rvm pkg install zlib
+#install sqlite3
+sudo apt-get install libsqlite3-dev
+#for rails server
+sudo apt-get install libssl-dev
+#for heroku
+sudo apt-get install libreadline-dev
+
+#install the latest ruby 
+rvm install ruby-1.9.3-p125
+rvm use 1.9.3 --default
+
+# verify
+ruby -v
+
+#install rails
+gem update --system
+gem install rails
+
+#git setup
+sudo apt-get install git
+git config --global user.name "Your Name"
+git config --global user.email youremail@example.com
+git config --global alias.co checkout
+
+#for git's editor I've used leafpad - which will be used to add commit messages, because gedit is my editor i'll be working in
+sudo apt-get install leafpad 
+git config --global core.editor leafpad 
+
+#for the automated testing
+sudo apt-get install libxml2 libxml2-dev libxslt1-dev
+
+#and follow the instructions here
+http://automate-everything.com/2009/08/gnome-and-autospec-notifications/
+
+# By now you should have a working development environment
+
+#TEST the environment
+
+#create a rails project
+rails new app_name
+
+#include this in your Gemfile (needed for rails server to work)
+gem 'therubyracer'
+
+#get gems
+bundle install
+
+#launch the server and it should work
+rails server
+
+#initialize git in your projects folder 
+git init
+#add all files
+git add .
+#commit 
+git commit -a -m "Initial commit"

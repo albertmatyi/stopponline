@@ -35,9 +35,9 @@ group :test do
 #  gem 'database_cleaner', '0.7.0'
 end
 
-#group :production do
-#  gem 'pg', '0.12.2'
-#end
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
