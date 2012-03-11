@@ -12,10 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require joe0
-//= require joe1
-//= require smoothscroll
-//= require fancybox/jquery.mousewheel-3.0.4.pack.js
-//= require fancybox/jquery.fancybox-1.3.4.pack.js
-//= require joe2
+//= reuiqre boostrap
 //= require_tree .
