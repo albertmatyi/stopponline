@@ -6,7 +6,6 @@
 <%= stylesheet_link_tag    "application", :media => "screen" %>
 <%= javascript_include_tag "application" %>
 <%= csrf_meta_tags %>
-<%= render 'layouts/stylesheets' %>
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -14,25 +13,23 @@
 </head>
 
 <body>
-<div id="page">
+<header class="page-header">
   <%= render :partial => "layouts/flash", :locals => {:flash => flash} %>
   <%= render 'layouts/navigation' %>
+</header>
+<div id="page">
   <div id="main-content">
-
     <%= yield %>
-
   </div>
 </div>
 <% if Rails.env.development? 
 %>
-  <div id="debugdiv">
-    <%=debug(params)%>
-  </div>
 <%
 end %>
 
-<%= render 'layouts/scripts' %>
 <%#= render 'layouts/footer' %>
-
+<div id="debugdiv">
+    <%=debug(params)%>
+</div>
 </body>
 </html>
