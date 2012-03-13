@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20120304193107) do
     t.integer  "src_location_id"
     t.integer  "dst_location_id"
     t.datetime "departure_date"
-    t.datetime "arrival_data"
+    t.datetime "arrival_date"
     t.integer  "places"
     t.string   "details"
     t.datetime "created_at",      :null => false

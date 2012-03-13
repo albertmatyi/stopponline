@@ -5,7 +5,7 @@ class CreateRoutes < ActiveRecord::Migration
       t.integer :src_location_id
       t.integer :dst_location_id
       t.timestamp :departure_date
-      t.timestamp :arrival_data
+      t.timestamp :arrival_date
       t.integer :places
       t.string :details
 

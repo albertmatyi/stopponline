@@ -1,0 +1,32 @@
+ul.nav.app-nav{
+  margin: 0;
+}
+
+ul.nav.app-nav{
+  float: right;
+  margin-right: 4em;
+}
+
+ul.nav.app-nav > li {
+  float: left;  
+}
+
+ul.nav.app-nav > li a {
+  padding: 1em 2em;
+}
+
+.page-header{
+  padding-bottom: 0;
+}
+
+#page {
+  margin: 0em 15em;
+}
+
+textarea {
+  height: 15em;
+}
+
+div.field, div.actions {
+  margin-left: 1em;
+}
