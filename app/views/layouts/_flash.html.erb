@@ -1,5 +1,5 @@
 <section class="round">
   <% flash.each do |key, value| %>
-    <div class="flash <%= key %>"><%= value %></div>
+    <div class="alert alert-<%= bootstrap_key key %>"><%= value %></div>
   <% end %>
 </section>
