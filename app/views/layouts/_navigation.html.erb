@@ -7,11 +7,14 @@
 
 <nav>
   <ul class="nav app-nav">
-   	<li class="<%=is_active?('routes/index') %>" id="nav-1">
-   	  <%=link_to 'Passengers', routes_path %>  
+   	<li class="<%=is_active?('routes/index')||is_active?('static_pages/home') %>" id="nav-1">
+   	  <%=link_to 'Passengers', '/' %>  
  	  </li>
     <li class="<%=is_active?('routes/new') %>" id="nav-2">
       <%=link_to 'Drivers', new_route_path %>
+    </li>
+    <li id="nav-4">
+      <%=link_to 'Contact', contact_path %>
     </li>
     <li class="<%=is_active?('registrations/edit') || is_active?('registrations/new') %>" id="nav-3">
       <% if user_signed_in? %>
@@ -20,7 +23,6 @@
           <%=link_to 'Sign up', new_user_registration_path%>
       <%end%>
     </li>
-    <li id="nav-4"><a href="#contact">Contact</a></li>
     <li class="<%=is_active?('sessions/new')%>">
       <% if user_signed_in? %>
         <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>        

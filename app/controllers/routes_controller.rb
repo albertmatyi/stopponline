@@ -38,7 +38,7 @@ class RoutesController < ApplicationController
     @route = Route.find(params[:id])
   end
 
-  # POST /routes
+  # POST /routes 
   # POST /routes.json
   def create
     @route = Route.new(params[:route])

@@ -36,6 +36,12 @@ ul.nav.app-nav{
 ul.nav.app-nav > li {
   float: left;  
 }
+ul.nav.app-nav > li.active {
+  background: #eee;
+}
+ul.nav.app-nav > li.active a:hover{
+  cursor: default;
+}
 ul.nav.app-nav > li a {
   padding: .85em 2em;
 }
@@ -49,5 +55,4 @@ textarea {
 div.field, div.actions {
   margin-left: 1em;
 }
-
 
