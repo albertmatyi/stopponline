@@ -56,3 +56,28 @@ div.field, div.actions {
   margin-left: 1em;
 }
 
+
+/*
+ * Suggestion box styling
+ */
+ul.suggestions { 
+  border: solid 1px #ddd;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  z-index: 99999;
+}
+ul.suggestions > li {
+  padding: .2em;
+  border-top: solid 1px #eee;
+}
+ul.suggestions > li:first-child {
+   border-top: none;
+}
+ul.suggestions > li.active {
+  background: #6cf;
+  color: #fff;
+  cursor: pointer;
+}

@@ -13,4 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= reuiqre boostrap
-//= require_tree .
+//= require routes
