@@ -1,0 +1,19 @@
+<!--<table class=".table">
+  <tr>
+  <th>Name</th>
+  </tr>
+  <% @locations.each do |loc| %>
+    <tr>
+      <td>
+        <%=loc.name%>
+      </td>
+    </tr>
+  <% end %>
+</table> -->
+  <ul class="suggestions" style="width: 100%; text-align: center;">
+  <% @locations.each do |loc| %>
+    <li >
+      <%=loc.name%>
+    </li>
+  <% end %>
+  </ul>
