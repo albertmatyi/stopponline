@@ -11,6 +11,7 @@
  *
  *= require bootstrap
  *= require app
+ *= require jquery-ui-1.8.18.custom
  *= require_self
  *= require_tree 
 */

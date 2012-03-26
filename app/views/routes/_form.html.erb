@@ -13,11 +13,11 @@
     <div class="clearfix"> </div>
     <div class="field pull-left">
       <%= f.label :departure_date %><br />
-      <%= f.text_field :departure_date, placeholder: 'Date of the departure', required: true %>
+      <%= f.text_field :departure_date, placeholder: 'Date of the departure', required: true, class: 'datepicker' %>
     </div>
     <div class="field pull-left">
       <%= f.label :arrival_date %><br />
-      <%= f.text_field :arrival_date, placeholder: 'Date of arrival', required: true %>
+      <%= f.text_field :arrival_date, placeholder: 'Date of arrival', required: true, class: 'datepicker' %>
     </div>
     <div class="field">
       <%= f.label :places %><br />
